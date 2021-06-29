@@ -1,0 +1,72 @@
+{% extends 'core/base.html'%}
+
+{% load static %}
+
+{% block contenido %}
+
+
+
+  <section id="form">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-12 col-sm-6">
+          <img  class="img-fluid" src="{% static 'core/'%}Solemne1/images/300m.png"
+            alt="">
+        </div>
+        <div  class="col-12 col-sm-6">
+          <h1>
+            PLAN S
+          </h1>
+
+          
+            <a href="{% url 'registro_usuario'%}" id="boton1" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">REGISTRARSE AHORA</a>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="form">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-12 col-sm-6">
+          <img class="img-fluid" src="{% static 'core/'%}Solemne1/images/600m.png"
+            alt="">
+        </div>
+        <div  class="col-12 col-sm-6">
+          <h1>
+            PLAN M
+          </h1>
+
+          
+            <a href="{% url 'registro_usuario'%}" id="boton1" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">REGISTRARSE AHORA</a>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="form">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-12 col-sm-6">
+          <img class="img-fluid" src="{% static 'core/'%}Solemne1/images/900m.png"
+            alt="">
+        </div>
+        <div  class="col-12 col-sm-6">
+          <h1 >
+            PLAN L
+          </h1>
+
+          
+            <a href="{% url 'registro_usuario'%}" id="boton1" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">REGISTRARSE AHORA</a>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+{% endblock %}
+
+

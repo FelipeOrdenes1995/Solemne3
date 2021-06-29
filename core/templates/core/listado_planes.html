@@ -1,0 +1,55 @@
+{% extends 'core/base.html' %}
+
+{% block contenido %}
+
+<h2 style="color: rgb(206, 195, 195);background-color: rgb(41, 40, 40);" >Listado Planes</h2>
+<table class="table table-hover,table table-bordered">
+    <tr>
+        
+        <th style="background-color: rgb(223, 210, 210);color: rgb(2, 2, 2);">
+            Servicio
+        </th>
+        <th style="background-color: rgb(223, 210, 210);color: rgb(2, 2, 2);">
+            Nombre
+        </th>
+        <th style="background-color: rgb(223, 210, 210);color: rgb(2, 2, 2);">
+            Precio
+        </th>
+        <th style="background-color: rgb(223, 210, 210);color: rgb(2, 2, 2);">
+            Contenido
+        </th>
+        
+    </tr>
+    {% for p in planes %}
+    <tr>
+        
+        <td style="background-color: rgb(0, 0, 0);color: rgb(255, 253, 253, 0.87);">
+            {{ p.servicio }}
+        </td>
+        <td style="background-color: rgb(65, 63, 63);color: rgba(255, 253, 253, 0.87);">
+            {{ p.nombre }}
+        </td>
+        <td style="background-color: rgb(38, 161, 7);color: rgb(255, 253, 253, 0.87);">
+            ${{ p.precio }}.-
+        </td>
+        <td style="background-color: rgb(222, 243, 217);color: rgb(8, 8, 8);">
+            {{ p.contenido }}
+        </td>
+
+        
+        
+        <td style="background-color: rgba(65, 63, 63)">
+            {% if perms.core.change_plan %}
+            <a style="color: rgb(24, 188, 230);" href="{% url 'modificar_plan' p.id %}">Modificar</a>
+            {% endif %}
+            {% if perms.core.delete_plan %}
+            <a style="color: rgb(230, 48, 24);" href="{% url 'eliminar_plan' p.id %}">Eliminar</a>
+            {% endif %}
+        </td>
+
+    </tr>
+    {% endfor %}
+</table>
+
+
+{% endblock %}

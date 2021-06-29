@@ -1,0 +1,146 @@
+{% extends 'core/base.html'%}
+
+{% load static %}
+
+{% block contenido %}
+
+
+  <section  class="text-center" id="form">
+    <h1 style="background-color: black; color: white;">
+      CONOCE NUESTROS PRODUCTOS
+  </section>
+  
+  <section id="form">
+    <div style="background-color: black; color: white;" class="container text-center">
+      <div class="row">
+        <div class="col-12 col-sm-6">
+          <img  class="img-fluid"
+            src="https://www.cronicanorte.es/wp-content/uploads/2019/03/Conexi%C3%B3n-5G-3.jpg" alt="">
+        </div>
+
+        
+        <div  class="col-12 col-sm-6">
+          <h1>
+            PLANES MOBILES
+          </h1>
+
+          <p class="text-justify text-center">Some placeholder text to demonstrate justified text alignment. Will you do
+            the same
+            for me? It's time to face the music I'm no longer your muse..</p>
+          <a href="{% url 'planmobile'%}" id="boton1" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Ver Plan</a>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section id="form">
+    <div style="background-color: black; color: white;" class="container text-center">
+      <div class="row">
+        <div class="col-12 col-sm-6">
+          <h1>
+            INTERNET HOGAR
+          </h1>
+
+          <p class="text-justify text-center">Some placeholder text to demonstrate justified text alignment. Will you do
+            the same
+            for me? It's time to face the music I'm no longer your muse.</p>
+          <a href="{% url 'internethogar'%}" id="boton1" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Ver
+            Plan</a>
+
+        </div>
+        <div class="col-12 col-sm-6">
+          <img class="img-fluid"
+            src="https://www.latercera.com/resizer/Te7G8Snk3onu7V_i0Gh3jrKf2pM=/900x600/smart/cloudfront-us-east-1.images.arcpublishing.com/copesa/4GKL2POJQZFTJNCCCIY7Q2GBOQ.jpg"
+            alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section id="form">
+    <div style="background-color: black; color: white;" class="container text-center">
+      <div class="row">
+        <div class="col-12 col-sm-6">
+          <img class="img-fluid"
+            src="http://cnt-tellsolutions.com/wp-content/uploads/2020/06/cropped-telefonia-fija-telefonia-hogar.jpg"
+            alt="">
+        </div>
+        <div class="col-12 col-sm-6">
+          <h1>
+            TELEFONIA HOGAR
+          </h1>
+
+          <p class="text-justify text-center">Some placeholder text to demonstrate justified text alignment. Will you do
+            the same
+            for me? It's time to face the music I'm no longer your muse..</p>
+          <a href="{% url 'telefoniahogar'%}" id="boton1" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Ver
+            Plan</a>
+
+
+          <div class="fixed-bottom">...</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="form">
+    <div style="background-color: black; color: white;" class="container text-center">
+      <div class="row">
+        <div  class="col-12 col-sm-6">
+          <h1>
+            NUESTRA EMPRESA
+          </h1>
+
+          <p class="text-justify text-center">Some placeholder text to demonstrate justified text alignment. Will you do
+            the same
+            for me? It's time to face the music I'm no longer your muse.</p>
+          <a href="{% url 'nuestraempresa'%}" id="boton1" class="btn btn-primary btn-lg active" role="button"
+            aria-pressed="true">Conocenos</a>
+
+        </div>
+        <div class="col-12 col-sm-6">
+          <img class="img-fluid" src="{% static 'core/'%}Solemne1/images/ClavisteV.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="form">
+    <div style="background-color: black; color: white;" class="container text-center">
+      <div class="row">
+        <div class="col-12 col-sm-6">
+          <img class="img-fluid"
+          src="https://fococonsultores.es/wp-content/uploads/2018/04/ventajas-contrato-formacion-2018-1080x675.jpg"
+          alt="">
+        </div>
+        <div class="col-12 col-sm-6">
+          <h1>
+            NORMATIVAS LEGALES
+          </h1>
+
+          <p class="text-justify text-center">Some placeholder text to demonstrate justified text alignment. Will you do
+            the same
+            for me? It's time to face the music I'm no longer your muse..</p>
+            <a href="{% url 'normativaslegales'%}" id="boton1" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Normativas</a>
+            
+
+
+          <div class="fixed-bottom">...</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+
+
+
+
+
+
+{% endblock %}
